@@ -40,8 +40,8 @@ const ProjectDetailPage = () => {
                   />
                 )}
                 <div className="absolute inset-0 flex flex-col justify-center items-start p-6 md:p-16">
-                  <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-500 mb-4">{project.hero.title}</h1>
-                  <p className="text-base sm:text-lg md:text-2xl text-white mb-6">{project.hero.subtitle}</p>
+                  <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-black mb-4">{project.hero.title}</h1>
+                  <p className="text-base sm:text-lg md:text-2xl text-black mb-6">{project.hero.subtitle}</p>
                   <div className="flex flex-wrap gap-4">
                     {project.hero.button1 && (
                       <a href={project.hero.button1} className="px-6 py-3 bg-orange-600 hover:bg-orange-500 rounded-full text-black font-semibold transition">
