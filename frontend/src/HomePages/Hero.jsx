@@ -53,8 +53,8 @@ const Hero = () => {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/my_cv.png";
-    link.download = "my_cv.png";
+    link.href = "/my_cv.pdf";
+    link.download = "my_cv.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
