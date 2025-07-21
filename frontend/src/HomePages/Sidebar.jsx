@@ -106,8 +106,7 @@ const Sidebar = () => {
               {
                 icon: address,
                 title: "ADDRESS",
-                line1: "GALI ARYA SAMAJ DOUBLE",
-                line2: "PHATAK MULTAN",
+                line1: "Multan,Punjab,Pakistan",
               },
             ].map((item, idx) => (
               <motion.li
@@ -150,8 +149,8 @@ const Sidebar = () => {
                       i === 0
                         ? "https://github.com/Dev-ali94"
                         : i === 1
-                        ? "http://www.facebook.com/ali.imran.313747"
-                        : "http://www.instagram.com/aliimran3740?igsh=MWFkanNyZjVzbTjqbw=="
+                        ? "https://www.facebook.com/profile.php?id=61578331262862"
+                        : "https://www.instagram.com/ali_imran_2007/"
                     }
                     className="flex items-center justify-center"
                   >
