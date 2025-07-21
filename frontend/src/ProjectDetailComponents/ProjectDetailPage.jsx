@@ -29,28 +29,28 @@ const ProjectDetailPage = () => {
       <main className="bg-[#161B22] p-2 w-full rounded-2xl border-gray-700">
         <div className="text-white space-y-10 overflow-y-auto max-h-[100vh] p-2">
 
-        {project.hero && (
+    {project.hero && (
   <motion.div {...fadeUp} className="bg-gray-900 w-full rounded-3xl mb-8 shadow-md overflow-hidden">
     <div className="relative">
       {project.image && (
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-auto max-h-[500px] object-cover rounded-3xl sm:rounded-3xl"
+          className="w-full h-auto max-h-[500px] object-cover rounded-3xl"
         />
       )}
-      <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-start p-4 sm:p-6 md:p-12 gap-4">
-        <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-orange-200">
+      <div className="absolute inset-0 bg-black/60 flex flex-col justify-center items-start p-4 sm:p-6 md:p-10 lg:p-16">
+        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-orange-400 mb-2 leading-snug break-words max-w-full">
           {project.hero.title}
         </h1>
-        <p className="text-sm sm:text-base md:text-xl text-gray-200 max-w-xl">
+        <p className="text-sm sm:text-base md:text-lg text-gray-200 mb-4 leading-relaxed max-w-full break-words">
           {project.hero.subtitle}
         </p>
-        <div className="flex flex-wrap gap-3 mt-4">
+        <div className="flex flex-wrap gap-3">
           {project.hero.button1 && (
             <a
               href={project.hero.button1}
-              className="px-4 py-2 sm:px-6 sm:py-3 bg-orange-600 hover:bg-orange-500 rounded-full text-black font-semibold text-sm sm:text-base transition"
+              className="px-3 py-2 sm:px-4 sm:py-2 md:px-5 md:py-2.5 bg-orange-600 hover:bg-orange-500 rounded-full text-black font-semibold text-sm sm:text-base transition"
             >
               Source Code
             </a>
@@ -58,7 +58,7 @@ const ProjectDetailPage = () => {
           {project.hero.button2 && (
             <a
               href={project.hero.button2}
-              className="px-4 py-2 sm:px-6 sm:py-3 bg-orange-600 hover:bg-orange-500 rounded-full text-black font-semibold text-sm sm:text-base transition"
+              className="px-3 py-2 sm:px-4 sm:py-2 md:px-5 md:py-2.5 bg-orange-600 hover:bg-orange-500 rounded-full text-black font-semibold text-sm sm:text-base transition"
             >
               Live Demo
             </a>
