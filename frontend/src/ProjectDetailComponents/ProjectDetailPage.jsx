@@ -29,35 +29,45 @@ const ProjectDetailPage = () => {
       <main className="bg-[#161B22] p-2 w-full rounded-2xl border-gray-700">
         <div className="text-white space-y-10 overflow-y-auto max-h-[100vh] p-2">
 
-          {project.hero && (
-            <motion.div {...fadeUp} className='bg-gray-900 w-full rounded-3xl mb-8 shadow-md'>
-              <div className="relative">
-                {project.image && (
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full max-h-[500px] object-cover rounded-3xl mb-8"
-                  />
-                )}
-                <div className="absolute inset-0 flex flex-col justify-center items-start p-6 md:p-16">
-                  <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-orange-200 mb-4">{project.hero.title}</h1>
-                  <p className="text-base sm:text-lg md:text-2xl text-gray-200 mb-6">{project.hero.subtitle}</p>
-                  <div className="flex flex-wrap gap-4">
-                    {project.hero.button1 && (
-                      <a href={project.hero.button1} className="px-6 py-3 bg-orange-600 hover:bg-orange-500 rounded-full text-black font-semibold transition">
-                        Source code
-                      </a>
-                    )}
-                    {project.hero.button2 && (
-                      <a href={project.hero.button2} className="px-6 py-3 bg-orange-600 hover:bg-orange-500 rounded-full text-black font-semibold transition">
-                        Live Demo
-                      </a>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </motion.div>
+        {project.hero && (
+  <motion.div {...fadeUp} className="bg-gray-900 w-full rounded-3xl mb-8 shadow-md overflow-hidden">
+    <div className="relative">
+      {project.image && (
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-auto max-h-[500px] object-cover rounded-3xl sm:rounded-3xl"
+        />
+      )}
+      <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-start p-4 sm:p-6 md:p-12 gap-4">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-orange-200">
+          {project.hero.title}
+        </h1>
+        <p className="text-sm sm:text-base md:text-xl text-gray-200 max-w-xl">
+          {project.hero.subtitle}
+        </p>
+        <div className="flex flex-wrap gap-3 mt-4">
+          {project.hero.button1 && (
+            <a
+              href={project.hero.button1}
+              className="px-4 py-2 sm:px-6 sm:py-3 bg-orange-600 hover:bg-orange-500 rounded-full text-black font-semibold text-sm sm:text-base transition"
+            >
+              Source Code
+            </a>
           )}
+          {project.hero.button2 && (
+            <a
+              href={project.hero.button2}
+              className="px-4 py-2 sm:px-6 sm:py-3 bg-orange-600 hover:bg-orange-500 rounded-full text-black font-semibold text-sm sm:text-base transition"
+            >
+              Live Demo
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  </motion.div>
+)}
 
           <motion.div {...fadeUp} className="bg-gray-900 flex flex-col p-6 rounded-3xl">
             <h3 className="text-2xl font-semibold mb-4">Project Overview</h3>
