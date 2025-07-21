@@ -40,8 +40,8 @@ const ProjectDetailPage = () => {
                   />
                 )}
                 <div className="absolute inset-0 flex flex-col justify-center items-start p-6 md:p-16">
-                  <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-black mb-4">{project.hero.title}</h1>
-                  <p className="text-base sm:text-lg md:text-2xl text-black mb-6">{project.hero.subtitle}</p>
+                  <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-orange-200 mb-4">{project.hero.title}</h1>
+                  <p className="text-base sm:text-lg md:text-2xl text-gray-200 mb-6">{project.hero.subtitle}</p>
                   <div className="flex flex-wrap gap-4">
                     {project.hero.button1 && (
                       <a href={project.hero.button1} className="px-6 py-3 bg-orange-600 hover:bg-orange-500 rounded-full text-black font-semibold transition">
@@ -85,7 +85,7 @@ const ProjectDetailPage = () => {
                     className="bg-gray-700 p-4 rounded-lg mb-6 flex flex-row items-center space-x-5"
                   >
                     <div
-                      className={`w-4 h-4 rounded-full ${timelineEntry.category === 'complete' ? 'bg-green-500' : 'bg-red-500'}`}
+                      className={`w-4 h-4 p-2 rounded-full ${timelineEntry.category === 'complete' ? 'bg-green-500' : 'bg-red-500'}`}
                     ></div>
                     <div>
                       <h4 className="font-semibold text-lg">{timelineEntry.title}</h4>
